@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CALCULATOR | SHUBHAM SONAWANE</title>
+    <link rel="stylesheet" href="Calculator.css" />
+  </head>
+
+  <body>
+   
+    <div class="container">
+      <div class="display">
+        <input id="screen" type="text" placeholder="0" />
+      </div>
+
+      <div class="btns">
+        <div class="row">
+          <button class="btn">(</button>
+          <button class="btn">)</button>
+          <button class="btn">%</button>
+          <button id="ce" onclick="backspc()">CE</button>
+          <button id="ac" onclick="screen.value=''">AC</button>
+        </div>
+
+        <div class="row">
+          <button onclick="pi()">π</button>
+          <button class="btn">7</button>
+          <button class="btn">8</button>
+          <button class="btn">9</button>
+          <button class="btn">÷</button>
+        </div>
+
+        <div class="row">
+          <button onclick="log()">log</button>
+          <button class="btn">4</button>
+          <button class="btn">5</button>
+          <button class="btn">6</button>
+          <button class="btn">x</button>
+        </div>
+
+        <div class="row">
+          <button onclick="sqrt()">√</button>
+          <button class="btn">1</button>
+          <button class="btn">2</button>
+          <button class="btn">3</button>
+          <button class="btn">-</button>
+        </div>
+
+        <div class="row">
+          <button class="btn">.</button>
+          <button class="btn">0</button>
+          <button id="eval" onclick="screen.value=eval(screen.value)">=</button>
+          <button class="btn">+</button>
+        </div>
+        <div class="footer">
+          <footer>
+            <h5><p><u> &copy; Shubham Sonawane</u></p></h5>
+          </footer>
+          
+      </div>
+    </div>
+    <script src="Calculator.js"></script>
+
+  </body>
+  
+</html>
